@@ -736,7 +736,7 @@ const certificates: Record<string, any> = {
   "CERT-2020-117-52": {
     id: "CERT-2020-117-52",
     studentName: "Тутешева Назгуль Тлеугазиевна",
-    courseName: "Frontend-разрабочик",
+    courseName: "Frontend-разработчик",
     description: `Курс включает в себя:
 • HTML — структура веб-страниц
 • CSS — стили и оформление
@@ -748,7 +748,7 @@ const certificates: Record<string, any> = {
 • REST API — работа с бэкендом
 • Инструменты сборки — Webpack, Vite
 • Тестирование — Jest, unit-тесты
-• Деплой — публикация проектов (Vercel, Netlify),
+• Деплой — публикация проектов (Vercel, Netlify)`,
     completionDate: "15.04.2020",
     issueDate: "15.04.2020",
     duration: "120 часов",
@@ -764,7 +764,7 @@ const certificates: Record<string, any> = {
     description: `Курс включает в себя:
 • HTML — структура веб-страниц
 • CSS — стили и оформление
-• JavaScript — логика и интерактивностьь
+• JavaScript — логика и интерактивность
 • Git — контроль версий
 • Адаптивная вёрстка — mobile-first, медиазапросы
 • React / Vue — фреймворки для UI
@@ -794,13 +794,57 @@ const certificates: Record<string, any> = {
     verified: true,
     period: "12.03.2026-12.05.2026",
     deadline: "12.05.2029"
+  },
+  "CERT-2022-096": {
+    id: "CERT-2022-096",
+    studentName: "Қайранбаев Ерлан Ербайұлы",
+    courseName: "Инженер по тестированию",
+    description: `Курс включает в себя:
+• Введение в обеспечение качества ПО (QA)
+• Основы и виды тестирования ПО
+• Разработка тестовых сценариев и тест-планов
+• Жизненный цикл дефекта и написание баг-репортов
+• Тестирование веб-приложений и мобильных приложений
+• Основы тестирования API с использованием Postman
+• Работа со снифферами трафика (Charles, Fiddler)
+• Основы баз данных и написание SQL-запросов
+• Изучение систем контроля версий (Git) и баг-трекеров (Jira)`,
+    completionDate: "24.04.2022",
+    issueDate: "24.04.2022",
+    duration: "120 часов",
+    grade: "Отлично",
+    instructor: "QA Lead Engineer Абдуллин К.С.",
+    skills: ["Manual Testing", "Test Case Design", "Bug Reporting", "Test Planning", "Functional Testing", "API Testing", "Postman", "SQL", "Git", "Jira"],
+    verified: true
+  },
+  "CERT-2021-837": {
+    id: "CERT-2021-837",
+    studentName: "Алтайқызы Айгерім",
+    courseName: "Backend-разработчик",
+    description: `Курс включает в себя:
+• Основы backend-разработки и архитектура клиент-сервер
+• Разработка серверных приложений на Node.js и Express
+• Работа с реляционными базами данных (PostgreSQL, MySQL)
+• Проектирование и разработка RESTful API
+• Основы аутентификации и авторизации (JWT, OAuth)
+• Разработка бэкенда на Python (Django / FastAPI)
+• Основы работы с NoSQL базами данных (MongoDB)
+• Контейнеризация приложений с использованием Docker
+• Тестирование и деплой серверных систем на хостинг`,
+    completionDate: "27.10.2021",
+    issueDate: "27.10.2021",
+    duration: "180 часов",
+    grade: "Отлично",
+    instructor: "Senior Backend Developer Ахметов К.М.",
+    skills: ["Node.js", "Express.js", "Python", "SQL", "PostgreSQL", "REST API", "Docker", "Git", "JWT", "MongoDB"],
+    verified: true
   }
 };
 
 // Define static paths for all certificates
 export async function getStaticPaths() {
   return [
-    { params: { id: "CERT-2018-847" } },
+    { params: { id: "CERT-2020-5225" } },
     { params: { id: "CERT-2019-156" } },
     { params: { id: "CERT-2019-392" } },
     { params: { id: "CERT-2020-634" } },
@@ -843,8 +887,10 @@ export async function getStaticPaths() {
     { params: { id: "CERT-2026-856" } },
     { params: { id: "CERT-2026-912" } },
     { params: { id: "CERT-2026-913" } },
-    { params: { id: "CERT-2026-21645245321245" } },
-    { params: { id: "cert-25624-5535-52" } }
+    { params: { id: "cert-25624-5535-52" } },
+    { params: { id: "CERT-2022-096" } },
+    { params: { id: "CERT-2020-117-52" } },
+    { params: { id: "CERT-2021-837" } }
   ];
 }
 
